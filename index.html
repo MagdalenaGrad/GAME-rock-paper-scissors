@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <button class="new-game" id="new-game">new game</button>
+        <div id="prompt-message"></div>
+        <div id="score-final"></div>
+    </header>
+    <div id="panel">
+        <div id="rounds"></div>
+        <div class="score-board">
+            <div class="badge" id="player-badge">player</div>
+            <div class="badge" id="computer-badge">computer</div>
+            <span id="player-score">0</span>:<span id="computer-score">0</span>
+        </div>
+        <div class="result" id="output">
+            <p>Paper beats rock. You win!</p>
+        </div>
+        <div class="choices">
+            <div class="choice" id="r">
+                <p>Rock</p>
+            </div>
+            <div class="choice" id="p">
+                <p>Paper</p>
+            </div>
+            <div class="choice" id="s">
+                <p>Scissors</p>
+            </div>
+        </div>
+        <p id="action-message">make your move </p>
+    </div>
+    <div id="post-game-panel" style="display: none">
+        <img id="post-game-img" style="display: block; margin: auto; height: 250px">
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
